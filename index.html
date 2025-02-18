@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMADHAN 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            color: rgb(252, 249, 249);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: black;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header {
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+        header h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            font-family: 'Amiri', serif;
+            color: rgb(252, 250, 250);
+            font-weight: bold;
+        }
+
+        header h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Amri', serif;
+            color: #fbfafa (10, 10, 10);
+            box-shadow: #fffefe;
+            font-weight: bold;
+        }
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .dalil img, .dosa img, .pengertian img, .keutamaan img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border: 0px solid rgb(8, 8, 8);
+            box-shadow: 0px 6px 20px rgba(8, 8, 8, 0.7);
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .dalil img:hover, .dosa img:hover, .pengertian img:hover, .keutamaan img:hover {
+            transform: scale(1.1);
+        }
+        .highlight {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(251, 249, 249);
+            font-family: 'Amiri', serif;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.8;
+            color: #fffdfd;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="video background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    
+    <div>
+        <header>
+            <h2>marhaban ya ramadhan selamat menunaikan ibadah puasa bagi yang menjalankan🙏.
+                moga yang mengunjungi web ini di berikan kelancaran dalam melaksanakan puasa,
+                di beri kesehatan selama menjalankan puasa dan di limpahkan rezeki 
+                Amin Amin ya Rabbal Alamin🤲😇</h2>
+        </header>
+    </div>
+    
+    <section id="pengertian">
+        <div class="container pengertian">
+            <h2 class="highlight">PENGERTIAN PUASA🌝</h2>
+            <img src="masjid.jpg">
+            <p>Puasa adalah menahan diri dari makan🍚🍽️,minum🍹, dan segala hal yang membatalkannya dari terbit fajar🌄 hingga terbenam matahari🌅 dengan niat karena Allah.
+                puasa juga termasuk rukun islam yang ke 3 yang harus di kerjakan/di wajibkan oleh umat muslim👳‍♀️.
+                dan puasa juga melatih seseorang untuk bersabar,dan melatih seseorang agar bisa lebih bertaqwa kepada Allah SWT☝️😇☝️.
+            </p>
+        </div>
+    </section>
+
+    <section id="ramadhan">
+        <div class="container keutamaan">
+            <h2 class="highlight">KEUTAMAAN DI BULAN RAMADHAN🌚</h2>
+            <img src="al qur'an.jpg">
+            <p>Bulan Ramadhan adalah bulan penuh berkah dan ampunan. Mari kita tingkatkan ibadah dan perbanyak amal kebaikan.dengan berlomba lomba dalam kebaikan,
+                seperti sedekah,membaca al qur'an(tadarus) shalat 5 waktu, dzikir dan melakukan hal hal yang berhubungan dengan kebaikan lainnya.
+            </p>
+        </div>
+    </section>
+    
+    <section id="dalil">
+        <div class="container dalil">
+            <h2 class="highlight">DALIL TENTANG PUASA📋</h2>
+            <img src="dalil.jpg">
+            <p><strong>QS. Al-Baqarah: 183</strong></p>
+            <p>"Hai orang-orang yang beriman, diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang-orang sebelum kamu agar kamu bertakwa.☝️😇☝️"</p>
+        </div>
+    </section>
+    
+    <section id="DOSA">
+        <div class="container dosa">
+            <h2 class="highlight">PERINGATAN BAGI ORANG YANG MENINGGALKAN PUASA☠️💀⚠️⚠️</h2>
+            <img src="siksa kubur.jpg">
+            <p>"Barang siapa yang sengaja meninggalkan puasa Ramadhan tanpa uzur yang dibenarkan,
+                maka tidak dapat menggantinya meskipun berpuasa seumur hidup."
+                 (HR. Bukhari & Muslim)</p>
+        </div>
+    </section>
+</body>
+</html>
